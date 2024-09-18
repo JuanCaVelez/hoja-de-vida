@@ -1,0 +1,16 @@
+.fecha-label{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fecha-input{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.titulo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

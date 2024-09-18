@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="titulo">FORMATO ÚNICO</h2>
+    <h1 class="titulo"><strong>HOJA DE VIDA</strong></h1>
+    <h3 class="titulo">Persona Natural</h3>
+    <h6 class="titulo">(Leyes 190 de 1995, 489 y 443 de 1998)</h6>
+    <form>
+      <!-- Datos Personales -->
+      <div class="form-group">
+        <h2 class="titulo">Datos Personales</h2>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="primerApellido">PRIMER APELLIDO</label>
+            <input type="text" class="form-control" id="primerApellido" />
+          </div>
+          <div class="col-md-4">
+            <label for="segundoApellido">SEGUNDO APELLIDO ( O DE CASADA )</label>
+            <input type="text" class="form-control" id="segundoApellido" />
+          </div>
+          <div class="col-md-4">
+            <label for="nombres">NOMBRES</label>
+            <input type="text" class="form-control" id="nombres" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="documento">DOCUMENTO DE IDENTIFICACIÓN</label><br>
+            <label class="radio-inlne"> C.C
+              <input type="radio" name="documento" id="cc" value="cc">
+            </label>
+            <label class="radio-inlne"> C.E
+              <input type="radio" name="documento" id="ce" value="ce">
+            </label>
+            <label class="radio-inlne"> PAS
+              <input type="radio" name="documento" id="pas" value="pas">
+            </label>
+            <label for="ex3">
+              <input type="text" class="form-control" id="ex3">
+            </label>
+          </div>
+          <div class="col-md-1">
+            <label for="sexo">SEXO</label><br>
+            <label class="radio-inlne"> F
+              <input type="radio" name="sexo" id="sexoF" value="F">
+            </label>
+            <label class="radio-inlne"> M
+              <input type="radio" name="sexo" id="sexoM" value="M">
+            </label>
+          </div>
+          <div class="col-md-5">
+            <label for="nacionalidad">NACIONALIDAD</label><br>
+            <label class="radio-inlne"> COL
+              <input type="radio" name="nacionalidad" id="nacionalidadCol" value="COL">
+            </label>
+            <label class="radio-inlne"> EXTRANJERO
+              <input type="radio" name="nacionalidad" id="nacionalidadExtranjero" value="EXTRANJERO">
+            </label>
+            <label for="pais">PAÍS</label>
+            <label class="text-inlne">
+              <input type="text" class="form-control" id="pais">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="libretaMilitar">LIBRETA MILITAR</label><br>
+            <label class="radio-inlne"> PRIMERA CLASE
+              <input type="radio" name="libretaM" id="primeraClase" value="PRIMERACLASE">
+            </label>
+            <label class="radio-inlne"> SEGUNDA CLASE
+              <input type="radio" name="libretaM" id="segundaClase" value="SEGUNDACLASE">
+            </label>
+            <label for="numero">NUMERO
+              <input type="text" class="form-control" id="numero">
+            </label>
+            <label for="dm">D.M
+              <input type="text" class="form-control" id="dm">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="fechaYLugarDeNacimiento" class="fecha-label">FECHA</label>
+            <input type="date" class="form-control fecha-input" id="fecha">
+            <label for="pais">PAÍS</label>
+            <input type="text" class="form-control" id="pais">
+            <label for="depto">DEPTO</label>
+            <input type="text" class="form-control" id="depto">
+            <label for="municipio">MUNICIPIO</label>
+            <input type="text" class="form-control" id="municipio">
+          </div>
+          <div class="col-md-6">
+            <label for="direccionDeCorrespondecia">DIRECCIÓN DE CORRESPONDENCIA</label>
+            <input type="text" class="form-control" id="direccionDeCorrespondecia">
+            <div class="col-md-6">
+              <label for="pais">PAÍS</label>
+              <input type="text" class="form-control" id="pais">
+            </div>
+            <div class="col-md-6">
+              <label for="depto">DEPTO</label>
+              <input type="text" class="form-control" id="depto">
+            </div>
+            <div class="col-md-8">
+              <label for="municipio">MUNICIPIO</label>
+              <input type="text" class="form-control" id="municipio">
+            </div>
+            <div class="col-md-6">
+              <label for="telefono">TELÉFONO</label>
+              <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="col-md-6">
+              <label for="email">EMAIL</label>
+              <input type="text" class="form-control" id="email">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Formación Académica -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>EDUCACIÓN BASICA Y MEDIA</h4>
+          <p>MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A 6o. DE BACHILLERATO EQUIVALEN A LOS GRADOS
+            6o. A 11o. DE EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA )</p>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3">
+              <label>PRIMARIA</label>
+              <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox">1o.</label>
+                <label class="checkbox-inline"><input type="checkbox">2o.</label>
+                <label class="checkbox-inline"><input type="checkbox">3o.</label>
+                <label class="checkbox-inline"><input type="checkbox">4o.</label>
+                <label class="checkbox-inline"><input type="checkbox">5o.</label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label>SECUNDARIA</label>
+              <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox">6o.</label>
+                <label class="checkbox-inline"><input type="checkbox">7o.</label>
+                <label class="checkbox-inline"><input type="checkbox">8o.</label>
+                <label class="checkbox-inline"><input type="checkbox">9o.</label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label>MEDIA</label>
+              <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox">10o.</label>
+                <label class="checkbox-inline"><input type="checkbox">11o.</label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label>TÍTULO OBTENIDO</label>
+              <div class="form-group">
+                <input type="text" class="form-control">
+              </div>
+              <label>FECHA DE GRADO</label>
+              <div class="form-inline">
+                <input type="number" class="form-control" placeholder="MES" max="12" min="0" style="width: 45%;">
+                <input type="number" class="form-control" placeholder="AÑO" max="2024" min="0" style="width: 45%;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Formación Académica-->
+      <div class="row">
+        <div class="col-xs-12">
+          <h5>EDUCACION SUPERIOR (PREGRADO Y POSTGRADO)</h5>
+          <h5>DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA: TC (TÉCNICA), TL
+            (TECNOLÓGICA), TE (TECNOLÓGICA ESPECIALIZADA), UN (UNIVERSITARIA), ES (ESPECIALIZACIÓN), MG (MAESTRÍA O
+            MAGISTER), DOC (DOCTORADO O PHD), RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO
+            PREVISTA EN UNA LEY).</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2">
+          <label>MODALIDAD ACADÉMICA</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-xs-2">
+          <label>No.SEMESTRES APROBADOS</label>
+          <input type="number" class="form-control">
+        </div>
+        <div class="col-xs-2">
+          <label>GRADUADO</label><br>
+          <label class="radio-inlne">SI
+            <input type="radio" name="graduado" value="SI">
+          </label>
+          <label class="radio-inlne">NO
+            <input type="radio" name="graduado" value="NO">
+          </label>
+        </div>
+        <div class="col-xs-3">
+          <label>NOMBRE DE LOS ESTUDIOS O TÍTULO OBTENIDO</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-xs-2">
+          <div class="form-group">
+            <label>TERMINACÍON</label>
+            <label class="form-inline">MES
+              <input type="number" class="form-control" max="12" style="width: 35%;">
+            </label>
+            <label class="form-inline">AÑOS
+              <input type="number" class="form-control" max="2024" style="width: 45%;">
+            </label>
+          </div>
+        </div>
+        <div class="col-xs-1">
+          <div class="form-group">
+            <label>No.TARJETA PROFESIONAL</label>
+            <input type="text" class="form-control" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+      <!--Idiomas-->
+      <div class="row">
+        <div class="col-xs-12">
+          <p><strong>ESPECIFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA, REGULAR (R), BIEN
+              (B) O MUY BIEN (MB)</strong></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3"><strong>IDIOMA</strong></div>
+        <div class="col-xs-3"><strong>LO HABLA</strong></div>
+        <div class="col-xs-3"><strong>LEE</strong></div>
+        <div class="col-xs-3"><strong>LO ESCRIBE</strong></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <input type="text" class="form-control"></input>
+        </div>
+        <div class="col-xs-3">
+          <label class="radio-inlne"><input type="radio" name="habla1" value="R"> R</label>
+          <label class="radio-inlne"><input type="radio" name="habla1" value="B"> B</label>
+          <label class="radio-inlne"><input type="radio" name="habla1" value="MB"> MB</label>
+        </div>
+        <div class="col-xs-3">
+          <label class="radio-inlne"><input type="radio" name="lee1" value="R"> R</label>
+          <label class="radio-inlne"><input type="radio" name="lee1" value="B"> B</label>
+          <label class="radio-inlne"><input type="radio" name="lee1" value="MB"> MB</label>
+        </div>
+        <div class="col-xs-3">
+          <label class="radio-inlne"><input type="radio" name="escribe1" value="R"> R</label>
+          <label class="radio-inlne"><input type="radio" name="escribe1" value="B"> B</label>
+          <label class="radio-inlne"><input type="radio" name="escribe1" value="MB"> MB</label>
+        </div>
+      </div>
+      <!--Experiencia laboral-->
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-12" style="display: flex; align-items: center; justify-content: center;">
+            <label>RELACIONE SU EXPERIENCIA LABORAL O DE PRESTACIÓN DE SERVICIOS EN ESTRICTO ORDEN CRONOLÓGICO
+              COMENZANDO POR EL ACTUAL.</label>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12" style="display: flex; align-items: center; justify-content: center;">
+            <label>EMPLEO ACTUAL O CONTRATO VIGENTE</label>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="empresa o entidad">EMPRESA O ENTIDAD</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label class="radio-inlne">PUBLICA
+              <input type="radio" id="publica" name="empresa" value="PUBLICA">
+            </label>
+            <label class="radio-inlne">PRIVADA
+              <input type="radio" id="privada" name="empresa" value="PRIVADA">
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label for="pais">PAÍS</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="departamento">DEPARTAMENTO</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="municipio">MUNICIPIO</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="correoElectronicoEntidad">CORREO ELECTRONICO ENTIDADX</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="telefonos">TELEFONOS</label>
+            <input type="number" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="fechaIngreso">FECHA INGRESO</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="fechaRetiro">FECHA DE RETIRO</label>
+            <input type="date" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="cargoOContratoActual">CARGO O CONTRATO ACTUAL</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="dependencia">DEPENDENCIA</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-4">
+            <label for="direccion">DIRECCIÓN</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="row" style="display: flex; text-align:  center; justify-content: center;">
+          <div class="col-md-12">
+            <label>EMPLEO O CONTRATO ANTERIOR</label>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <h5>INDIQUE EL TIEMPO TOTAL DE SU EXPERIENCIA LABORAL EN NÚMERO DE AÑOS Y MESES.</h5>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><strong>OCUPACIÓN</strong></div>
+            <div class="col-md-3 text-center"><strong>AÑOS</strong></div>
+            <div class="col-md-3 text-center"><strong>MESES</strong></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">SERVIDOR PUBLICO</div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="2024" min="0">
+            </div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="12" min="0">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">EMPLEADO DEL SECTOR PRIVADO</div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="2024" min="0">
+            </div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="12" min="0">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">TRABAJADOR INDEPENDIENTE</div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="2024" min="0">
+            </div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="12" min="0">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"><strong> TIEMPO EXPERIENCIA</strong></div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="2024" min="0">
+            </div>
+            <div class="col-md-3">
+              <input type="number" class="form-control" max="12" min="0">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
